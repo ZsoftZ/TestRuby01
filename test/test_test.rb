@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'test_helper'
 
 RSpec.describe "something" do
   it "does something" do
