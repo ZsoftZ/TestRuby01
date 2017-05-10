@@ -3,7 +3,6 @@ require 'rspec/core/rake_task'
 
 RSpec::Core::RakeTask.new(:spec)do |t| 
   t.pattern = Dir.glob('**/*_test.rb').reject do |path|
-    path.include?('vendor')  # tell travis CI to ignore vendor tests
   end 
 end
 
