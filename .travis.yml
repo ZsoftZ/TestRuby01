@@ -7,9 +7,6 @@ rvm:
 
 env:
   CODECLIMATE_REPO_TOKEN: bf2f925246bb8756417beeb6c0ca8df89cc5e96e4171c293fdfa0225c24c6782
-  matrix:
-    # travis-ci.org supports concurrency of 5, beyond that and they queue
-    - SCRIPT_CMD="bundle exec rspec --pattern **{,/*/**}/*_test.rb"
 addons:
   code_climate:
     repo_token: bf2f925246bb8756417beeb6c0ca8df89cc5e96e4171c293fdfa0225c24c6782
